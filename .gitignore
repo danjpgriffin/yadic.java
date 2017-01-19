@@ -7,3 +7,7 @@ lib/build
 lib/runtime
 lib/optional
 lib/jcompilo.jar
+
+.gradle/
+.idea/
+classes/
