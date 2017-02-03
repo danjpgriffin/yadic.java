@@ -50,26 +50,30 @@ public class BaseTypeMap implements TypeMap {
 //        return (Resolver<T>) find(activators, pairFor(type));
 //    }
 //
-//    public TypeMap addType(Type type, Type concrete) {
-//        return addType(type, Resolvers.create(concrete, this));
-//    }
+    public TypeMap addType(Type type, Type concrete) {
+        throw new RuntimeException("DAN");
+        //return addType(type, Resolvers.create(concrete, this));
+    }
 //
-//    public TypeMap decorateType(final Type anInterface, final Type concrete) {
-//        return addType(anInterface, decorator(this, anInterface, concrete));
-//    }
+    public TypeMap decorateType(final Type anInterface, final Type concrete) {
+        throw new RuntimeException("DAN");
+        //return addType(anInterface, decorator(this, anInterface, concrete));
+    }
 //
-//    public TypeMap addType(Type type, Class<? extends Resolver> resolverClass) {
-//        return addType(type, activator(this, Unchecked.<Class<Resolver<Object>>>cast(resolverClass)));
-//    }
+    public TypeMap addType(Type type, Class<? extends Resolver> resolverClass) {
+        throw new RuntimeException("DAN");
+        //return addType(type, activator(this, Unchecked.<Class<Resolver<Object>>>cast(resolverClass)));
+    }
 //
-//    @SuppressWarnings("unchecked")
-//    public TypeMap addType(Type type, Resolver<?> resolver) {
+    @SuppressWarnings("unchecked")
+    public TypeMap addType(Type type, Resolver<?> resolver) {
+        throw new RuntimeException("DAN");
 //        if (contains(type)) {
 //            throw new ContainerException(type.toString() + " already added to container");
 //        }
 //        activators.add(Pair.<Type, Resolver<Object>>pair(type, lazy(resolver)));
 //        return this;
-//    }
+    }
 //
 //    @SuppressWarnings("unchecked")
 //    public <T> Resolver<T> remove(Type type) {
@@ -86,9 +90,10 @@ public class BaseTypeMap implements TypeMap {
 //        return none();
 //    }
 //
-//    public boolean contains(Type type) {
-//        return sequence(activators).exists(pairFor(type));
-//    }
+    public boolean contains(Type type) {
+        throw new RuntimeException("DAN");
+        //return sequence(activators).exists(pairFor(type));
+    }
 //
 //    public static LogicalPredicate<First<Type>> pairFor(Type type) {
 //        return where(first(Type.class), matches(type));

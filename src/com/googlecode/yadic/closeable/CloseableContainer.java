@@ -23,18 +23,20 @@ public abstract class CloseableContainer extends DelegatingContainer
 //        this.typeMap = typeMap;
 //    }
 //
-//    public static CloseableContainer closeableContainer() {
-//        return closeableContainer(new MissingResolver());
-//    }
+    public static CloseableContainer closeableContainer() {
+        throw new RuntimeException("DAN");
+        //return closeableContainer(new MissingResolver());
+    }
 //
-//    public static CloseableContainer closeableContainer(Resolver<?> parent) {
+    public static CloseableContainer closeableContainer(Resolver<?> parent) {
+        throw new RuntimeException("DAN");
 //        final CloseableTypeMap typeMap = new CloseableTypeMap(parent);
 //        return new CloseableContainer(typeMap) {
 //            public void close() throws IOException {
 //                typeMap.close();
 //            }
 //        };
-//    }
+    }
 //
 //    @Override
 //    protected CloseableContainer self() {

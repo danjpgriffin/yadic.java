@@ -14,20 +14,19 @@ public abstract class DelegatingTypeMap implements TypeMap{
 
 //    protected abstract TypeMap self();
 //
-//    public TypeMap addType(Type type, Resolver<?> resolver) {
+    public TypeMap addType(Type type, Resolver<?> resolver) {
+        throw new RuntimeException("DAN");
 //        map.addType(type, resolver);
 //        return self();
-//    }
+    }
 //
-//    public TypeMap addType(Type type, Class<? extends Resolver> resolverClass) {
-//        map.addType(type, resolverClass);
-//        return self();
-//    }
+    public TypeMap addType(Type type, Class<? extends Resolver> resolverClass) {
+        throw new RuntimeException("DAN");
+    }
 //
-//    public TypeMap addType(Type type, Type concrete) {
-//        map.addType(type, concrete);
-//        return self();
-//    }
+    public TypeMap addType(Type type, Type concrete) {
+        throw new RuntimeException("DAN");
+    }
 //
 //    public <T> Resolver<T> getResolver(Type type) {
 //        return map.getResolver(type);
@@ -38,14 +37,13 @@ public abstract class DelegatingTypeMap implements TypeMap{
 //        return map.remove(type);
     }
 //
-//    public boolean contains(Type type) {
-//        return map.contains(type);
-//    }
+    public boolean contains(Type type) {
+        throw new RuntimeException("DAN");
+    }
 //
-//    public TypeMap decorateType(Type anInterface, Type concrete) {
-//        map.decorateType(anInterface, concrete);
-//        return self();
-//    }
+    public TypeMap decorateType(Type anInterface, Type concrete) {
+        throw new RuntimeException("DAN");
+    }
 //
     public Object resolve(Type type) throws Exception {
         throw new RuntimeException("DAN");

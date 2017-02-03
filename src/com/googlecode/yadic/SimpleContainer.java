@@ -14,13 +14,14 @@ public class SimpleContainer extends DelegatingTypeMap implements Container {
 //        super(typeMap);
 //    }
 //
-//    public SimpleContainer(Resolver<?> parent) {
-//        this(new BaseTypeMap(parent));
-//    }
+    public SimpleContainer(Resolver<?> parent) {
+        //this(new BaseTypeMap(parent));
+    }
 //
-//    public SimpleContainer() {
-//        this(new MissingResolver());
-//    }
+    public SimpleContainer() {
+        throw new RuntimeException("DAN");
+        //this(new MissingResolver());
+    }
 
     public static SimpleContainer container(TypeMap typeMap) {
         throw new RuntimeException("DAN");
@@ -38,9 +39,9 @@ public class SimpleContainer extends DelegatingTypeMap implements Container {
         //return (T) Resolvers.resolve(this, aClass);
     }
 //
-//    public <T> Callable<T> getActivator(Class<T> aClass) {
-//        return asCallable(super.<T>getResolver(aClass), aClass);
-//    }
+    public <T> Callable<T> getActivator(Class<T> aClass) {
+        throw new RuntimeException("DAN");
+    }
 //
     public <T> Container add(final Class<T> concrete) {
         throw new RuntimeException("DAN");

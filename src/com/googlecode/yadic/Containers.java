@@ -11,18 +11,20 @@ import java.util.concurrent.Callable;
 //import static com.googlecode.yadic.resolvers.Resolvers.activator;
 
 public class Containers {
-//    @SuppressWarnings("unchecked")
-//    public static Container selfRegister(Container container) {
+    @SuppressWarnings("unchecked")
+    public static Container selfRegister(Container container) {
+        throw new RuntimeException("DAN");
 //        return container.addInstance(Container.class, container).
 //                addActivator(Resolver.class, container.getActivator(Container.class));
-//    }
+    }
 //
 //    @SuppressWarnings("unchecked")
-//    public static <I> Container decorateUsingActivator(final Container container, final Class<I> anInterface, final Class<? extends Callable<? extends I>> activator) {
-//        final Resolver<Object> existing = container.remove(anInterface);
+    public static <I> Container decorateUsingActivator(final Container container, final Class<I> anInterface, final Class<? extends Callable<? extends I>> activator) {
+        throw new RuntimeException("DAN");
+        //        final Resolver<Object> existing = container.remove(anInterface);
 //        final DecoratorResolver decoratorResolver = new DecoratorResolver(anInterface, existing, container);
 //        return (Container) container.addType(anInterface, activator(asResolver(decoratorResolver, activator), activator));
-//    }
+    }
 //
 //    private static <I> TypeMap asResolver(final DecoratorResolver decoratorResolver, final Class<? extends Callable<? extends I>> activator) {
 //        return new BaseTypeMap(new Resolver<Object>() {
@@ -58,10 +60,11 @@ public class Containers {
 //        return container;
     }
 //
-//    public static <I, C extends I> Container addIfAbsent(Container container, Class<I> anInterface, Class<C> concrete) {
+    public static <I, C extends I> Container addIfAbsent(Container container, Class<I> anInterface, Class<C> concrete) {
+        throw new RuntimeException("DAN");
 //        if (!container.contains(anInterface)) return container.add(anInterface, concrete);
 //        return container;
-//    }
+    }
 //
 //    public static <I, C extends I> Container addInstanceIfAbsent(Container container, Class<I> anInterface, C instance) {
 //        if (!container.contains(anInterface)) return container.addInstance(anInterface, instance);
